@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-IpDashboardApplication<ip-dashboard>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "in.ipl.ipdashboard.IpDashboardApplication",
+            "projectName": "ip-dashboard",
+            "args": ""
+        }
+    ]
+}

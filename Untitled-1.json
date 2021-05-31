@@ -1,0 +1,41 @@
+{
+    "Code": "WW1000443475-1",
+    "StatusCode": "DELIVERED",
+    "ItemSKU": "8907819922115",
+    "ItemName": "20FEW13476-213505",
+    "ItemSize": "6",
+    "ItemCategory": "W-KURTA",
+    "ItemBrand": "W",
+    "MRP": "1999.00",
+    "SellingPrice": "999.00",
+    "Discount": "0.00",
+    "PrepaidAmount": "0.00",
+    "isCancellable": "false",
+    "isReturnable": "true",
+    "CreatedOn": "2021-05-07 05:37:00",
+    "ShippingPackage": {
+        "ShipmentFacility": "Glaucus_Pataudi",
+        "FacilityCode": "GL_PAT_01",
+        "TrackingNumber": "8822384147",
+        "StatusCode": "DELIVERED",
+        "ShippingProvider": "EcomExpress-W and Wishful"
+    },
+    "ReversePickup": {
+        "Code": "RPGLP90088",
+        "ReverseReason": {},
+        "InventoryStatus": {},
+        "ShipmentFacility": "Glaucus_Pataudi",
+        "TrackingNumber": "5520979345",
+        "StatusCode": "COURIER_ALLOCATED",
+        "ShippingProvider": "EcomExpress-W and Wishful",
+        "CreatedOn": "2021-05-11 11:02:00"
+    },
+    "RefundDetails": {
+        "Code": "10103028",
+        "RefundAmount": "999.00",
+        "RefundReason": "RVP",
+        "StatusCode": "CREATED",
+        "CreatedOn": "2021-05-11 11:59:00",
+        "ReportedOn": {}
+    }
+}
