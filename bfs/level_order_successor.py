@@ -13,26 +13,17 @@ def level_order_succesor(root, val):
     queue = deque()
     queue.append(root)
 
-    found = False
     while queue:
-        size_of_level = len(queue)
-        # current_level = []
+        current_node = queue.popleft()
 
-        for _ in range(size_of_level):
-            current_node = queue.popleft()
-            if found:
-                # current_node = queue.popleft()
-                return current_node.val
+        if current_node.left:
+            queue.append(current_node.left)
+        if current_node.right:
+            queue.append(current_node.right)
 
-            if current_node.val == val:
-                found = True
-
-            if current_node.left:
-                queue.append(current_node.left)
-            if current_node.right:
-                queue.append(current_node.right)
-
-    return -1
+        if current_node.val == val:
+            break
+    return queue[0].val if queue else None
 
 
 def main():
@@ -44,7 +35,7 @@ def main():
     root.right.right = TreeNode(5)
     root.right.left.left = TreeNode(100)
 
-    print("level_order_succesor: ", level_order_succesor(root, 5))
+    print("level_order_succesor: ", level_order_succesor(root, 1))
 
 
 if __name__ == '__main__':
