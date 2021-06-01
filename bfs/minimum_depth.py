@@ -25,13 +25,6 @@ def find_min_depth(root):
                 queue.append(current_node.right)
 
 
-
-
-
-
-    pass
-
-
 def main():
     root = TreeNode(12)
     root.left = TreeNode(7)
