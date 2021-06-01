@@ -2,26 +2,34 @@ from bfs import TreeNode
 from collections import deque
 
 
-def average_of_level(root):
+def find_min_depth(root):
     if root is None:
-        return
+        return -1
 
     queue = deque()
     queue.append(root)
-    level_average = []
+    min_depth = 0
+
     while queue:
+        min_depth += 1
         size_of_level = len(queue)
-        sum_temp = 0
 
         for _ in range(size_of_level):
             current_node = queue.popleft()
+            if current_node.left is None and current_node.left is None:
+                return min_depth
+
             if current_node.left:
                 queue.append(current_node.left)
             if current_node.right:
                 queue.append(current_node.right)
-            sum_temp += current_node.val
-        level_average.append(sum_temp / size_of_level)
-    return level_average
+
+
+
+
+
+
+    pass
 
 
 def main():
@@ -30,7 +38,11 @@ def main():
     root.right = TreeNode(1)
     root.left.left = TreeNode(9)
     root.right.left = TreeNode(10)
-    print("level order average: ", average_of_level(root))
+    root.right.right = TreeNode(5)
+    root.right.left.left = TreeNode(100)
+
+    # print("what is root", root)
+    print("min depth is: ", find_min_depth(root))
 
 
 if __name__ == "__main__":

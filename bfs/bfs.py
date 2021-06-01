@@ -43,4 +43,5 @@ def main():
     print("level order traversal: ", in_order_traversal(root))
 
 
-main()
+if __name__ == "__main__":
+    main()
